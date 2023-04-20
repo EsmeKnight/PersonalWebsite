@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Esme Knight";
+}
+
+<div class="main-container">
+    <div class="head-container">
+        <div class="head">
+            <h1>Esme Knight</h1>
+            <div class="title-container" onmouseover="titleScroll()">
+                <div class="junior-developer-container flex">
+                    <h2 id="juniorDeveloperAnimated">Junior</h2>
+                    <h2>Developer</h2>
+                </div>
+                <div id="webDeveloper" class="title-word webDeveloper flex"><h2>Web</h2></div>
+                <div id="javaDeveloper" class="title-word javaDeveloper flex"><h2>Java</h2></div>
+                <div id="pythonDeveloper" class="title-word pythonDeveloper flex"><h2>Python</h2></div>
+                <div id="cDeveloper" class="title-word cDeveloper flex"><h2>C#</h2></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="language-list-container">
+        <div>
+            <ul>
+                <li onmouseover="animateJava()" onmouseout="unanimateJava()">
+                    <i id="javaIcon" class="fa-brands fa-java icon"></i>Java
+                </li>
+                <li onmouseover="animateJavascript()" onmouseout="unanimateJavascript()">
+                    <a asp-controller="Home" asp-action="Webdevelopment">
+                        <i id="javascriptIcon" class="fa-brands fa-square-js icon"></i>Web Development
+                    </a>
+                    <div class="dropdown"></div>
+                </li>
+                <li onmouseover="animateCSharp()" onmouseout="unanimateCSharp()">
+                    <a asp-controller="Home" asp-action="Csharp">
+                        <i id="microsoftIcon" class="fa-brands fa-microsoft icon"></i>C#
+                    </a>
+                    <div class="dropdown"></div>
+                </li>
+                <li onmouseover="animatePython()" onmouseout="unanimatePython()">
+                    <a asp-controller="Home" asp-action="Python">
+                        <i id="pythonIcon" class="fa-brands fa-python icon"></i>Python
+                    </a>
+                </li>
+
+            </ul>
+            <script>
+                function animateJava() {
+                    document.getElementById("javaIcon").className = "fa-brands fa-java fa-bounce icon"
+                }
+                function unanimateJava() {
+                    document.getElementById("javaIcon").className = "fa-brands fa-java icon"
+                }
+                function animatePython() {
+                    document.getElementById("pythonIcon").className = "fa-brands fa-python fa-bounce icon"
+                }
+                function unanimatePython() {
+                    document.getElementById("pythonIcon").className = "fa-brands fa-python icon"
+                }
+                function animateCSharp() {
+                    document.getElementById("microsoftIcon").className = "fa-brands fa-microsoft fa-bounce icon"
+                }
+                function unanimateCSharp() {
+                    document.getElementById("microsoftIcon").className = "fa-brands fa-microsoft icon"
+                }
+                function animateJavascript() {
+                    document.getElementById("javascriptIcon").className = "fa-brands fa-square-js fa-bounce icon"
+                }
+                function unanimateJavascript() {
+                    document.getElementById("javascriptIcon").className = "fa-brands fa-square-js icon"
+                }
+            </script>
+        </div>
+    </div>
+
+    <div class="contact-details-container flex">
+        <div class="contact-details">
+            <div>
+                <span class="github-link">
+                    <a href="https://github.com/EsmeKnight">Github</a>
+                </span>
+                <span class="githubimg">
+                    <img src="~/imgs/githubpreview.PNG" width="250" />
+                </span>
+            </div>
+            <div>
+                <span class="linkedin-link">
+                    <a href="https://www.linkedin.com/in/esme-k-76840b102/">LinkedIn</a>
+                </span>
+                <span class="linkedinimg">
+                    <img src="~/imgs/linkedinpreview.PNG" width="250" />
+                </span>
+            </div>
+            <div>esme.e.knight@gmail.com</div>
+        </div>
+    </div>
+</div>

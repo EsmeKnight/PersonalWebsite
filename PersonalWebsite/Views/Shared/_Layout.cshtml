@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Styles/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/Styles/cursorparticlesstyles.css" rel="stylesheet"/>
+    @*    <script src="~/JavaScript/app.js"></script>
+    <script src="~/JavaScript/particles.min.js"></script>*@
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="particles-js">
+    </div>
+    <div class="main-content">
+        @RenderBody()
+    </div>
+    <div id="root"></div>
+</body>
+
+<script src="~/JavaScript/particles.js"></script>
+@*<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>*@
+<script src="~/JavaScript/app.js"></script>
+<script src="~/JavaScript/home.js"></script>
+<script src="~/JavaScript/webdevelopment.js"></script>
+<script src="~/JavaScript/cursorparticles.js"></script>
+</html>

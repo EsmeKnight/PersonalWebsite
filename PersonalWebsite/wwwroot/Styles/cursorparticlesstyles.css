@@ -1,0 +1,24 @@
+﻿@keyframes bubble-fade {
+    0% {
+        opacity: 30%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.bubble {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70px;
+    width: 70px;
+    transform: translate(-50%,-50%);
+    background: none;
+    border-radius: 50%;
+    transition: 0;
+    opacity: 0;
+    animation-name: bubble-fade;
+    animation-duration: 2s;
+}

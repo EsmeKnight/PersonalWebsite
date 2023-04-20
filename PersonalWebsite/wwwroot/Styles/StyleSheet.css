@@ -1,0 +1,282 @@
+﻿:root {
+    --margin-width: 350px;
+    --list-item-buffer: 12px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    color: lightcyan;
+    background-color: #008795;
+}
+
+.main-content {
+    position: absolute;
+    margin-left: var(--margin-width);
+    margin-right: var(--margin-width);
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*#particles-js {
+    background-color: #008795;
+    background-image: url((unknown));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}*/
+
+.head > h1 {
+    font-size: 40px;
+}
+
+    .head > h1:hover {
+        animation-name: name;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+
+@keyframes name {
+    0% {
+        color: #e929ec
+    }
+
+    14.2857142857% {
+        color: #de0707
+    }
+
+    28.5714285714% {
+        color: #de8f07
+    }
+
+    42.8571428571% {
+        color: #eef12d
+    }
+
+    57.1428571428% {
+        color: #29ec29
+    }
+
+    71.4285714285% {
+        color: #29d4ec
+    }
+
+    85.7142857142% {
+        color: #4429ec
+    }
+
+    100% {
+        color: #e929ec
+    }
+}
+
+@keyframes titleSlide {
+    0% {
+        opacity: 100%;
+        position: absolute;
+        top: 0px;
+    }
+
+
+    80% {
+        position: absolute;
+        top: -30px;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes TEST {
+    0% {
+        opacity: 100%;
+        position: absolute;
+        top: 0px;
+    }
+
+    80% {
+        position: absolute;
+        top: -30px;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes resetJunior {
+    from {
+        position: absolute;
+        top: -30px;
+        opacity: 0;
+    }
+
+    to {
+        position: absolute;
+        top: 0px;
+        opacity: 0%;
+    }
+}
+
+@keyframes juniorFadeIn {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.junior-developer-container > h2 {
+    margin: 0;
+}
+
+#juniorDeveloperAnimated {
+    padding-right: 10px;
+    min-width: 73px;
+    opacity: 100%;
+}
+
+.title-container {
+    height: 28px;
+    position: absolute;
+    top: 100px;
+    display: block;
+    width: 73px;
+}
+
+.title-word {
+    justify-content: flex-end;
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    width: 73px;
+    top: 0;
+}
+
+    .title-word > h2 {
+        margin: 0;
+    }
+
+.webDeveloper {
+    z-index: 100;
+    position: absolute;
+    opacity: 0;
+}
+
+
+.javaDeveloper {
+    z-index: 99;
+}
+
+.pythonDeveloper {
+    z-index: 98;
+    opacity: 0%;
+}
+
+.cDeveloper {
+    z-index: 97;
+    opacity: 0%;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+    ul > li {
+        margin-bottom: var(--list-item-buffer);
+    }
+
+a {
+    text-decoration: none;
+}
+
+#javaIcon {
+    font-size: 36px;
+}
+
+.icon {
+    padding-right: 10px
+}
+
+
+.githubimg {
+    display: none;
+}
+
+.github-link:hover ~ .githubimg {
+    display: flex;
+    position: absolute;
+    left: 955px;
+    z-index: 2;
+}
+
+.linkedinimg {
+    display: none;
+}
+
+.linkedin-link:hover ~ .linkedinimg {
+    display: block;
+    position: absolute;
+    left: 955px;
+    z-index: 2;
+}
+
+.flex {
+    display: flex;
+}
+
+.language-list-container {
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.contact-details-container {
+    justify-content: flex-end;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 25px;
+}
+
+    .contact-details > div {
+        margin-bottom: var(--list-item-buffer);
+    }
+
+.scroller {
+    position: absolute;
+    margin-top: 100px;
+    height: 700px;
+    width: -moz-available;
+    z-index: 1;
+}
+
+.arrows-container {
+    position: absolute;
+    color: black;
+    top: 420px;
+    z-index: 2;
+}
+
+    .arrows-container > .arrow-left {
+        position: absolute;
+        left: 40px;
+    }    
+    .arrows-container > .arrow-right {
+        position: absolute;
+        left:1090px;
+    }
+
+a {
+    color: lightcyan;
+}
